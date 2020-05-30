@@ -12,8 +12,12 @@ def beauty(content:str)->str:
     return jsbeautifier.beautify(content.decode())
 
 def getjs(url:str)->dict:
-    try: return requests.get(url) 
-    except: return {'content':None}
+    try: 
+        r = requests.get(url)
+        if r.status_code == 200:
+            return r
+    except: 
+        return {"content":"","status_code":500}
 
 def main()->None:
     try:
