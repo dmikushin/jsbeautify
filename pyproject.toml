@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.7"
 license = {text = "MIT"}
 authors = [
-    {name = "m4ll0k", email = ""}
+    {name = "m4ll0k", email = "m4ll0k@protonmail.com"}
 ]
 keywords = ["javascript", "beautify", "formatter", "js", "cli"]
 classifiers = [
